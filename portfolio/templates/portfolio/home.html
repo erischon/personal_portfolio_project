@@ -5,8 +5,11 @@
 <h2>{{ project.title }}</h2>
 <p>{{ project.description }}</p>
 <img src="{{ project.image.url }}" width="250">
+
 {% if project.url %}
+
 <p><a href="{{ project.url }}">Lien</a></p>
+
 {% endif %}
 
 {% endfor %}
