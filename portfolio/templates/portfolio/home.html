@@ -3,12 +3,15 @@
 {% block content %}
 
 {% load static %}
- 
-    <h1>EriSchön Portfolio</h1>
-    
-    <a href="{% url 'blog:all_blogs' %}">Blog</a>
-    
-    <img src="{% static 'portfolio/tree.jpg' %}" alt="">
+
+    <div class="menu">
+        <a href="{% url 'blog:all_blogs' %}">Blog</a>
+    </div>
+  
+    <div class="header">
+        <h1>EriSchön Portfolio</h1>
+        <img src="{% static 'portfolio/tree.jpg' %}" alt="">
+    </div>
     
     {% for project in projects %}
     
